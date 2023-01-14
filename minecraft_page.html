@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="minecraft_style.css">
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
+</head>
+<body>
+    <section style="float: right;">
+        <a href="index.html", style="position: relative; width: 60px; height: 60px;"><img src="images/home.png", width="60px", height="60px"></a>
+    </section>
+    <section style="float: left;">
+        <div class="dropdown">
+            <button class="dropbtn", style="font-weight: bold;">Menu</button>
+            <div class="dropdown-content">
+                <a class="Minecraft", href="minecraft_page.html", style="text-align:center;"><img src="images/minecraft.png", style="height: 20px; width: 20px; margin-right: 20px; margin-left: 10px;">Minecraft</a>
+                <a class="Python" href="python_page.html"><section style="float:top; margin-left: 40px;"><img src="images/python.png", style="height: 30px; width: 30px; margin-right: 20px;"></section><p style="margin-left: 30px;">Python</p></a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </section>
+    <h1>Minecraft</h1>
+    <h2 style="border: 2px solid white; width: 400px; height: 30px; border-radius: 5px; text-align: center;">Что интересного</h2>
+    <p class="p-contain">Здесь вы сможете найти некоторую информацию насчёт идей по майнкрафту. Надеюсь, это поможет вам в ваших проектах,<br>или подтолкнёт к чему-нибудь интересному. Желаю приятного пребывания на моём сайте :)</p>
+    <h2 style="border: 2px solid white; width: 400px; height: 30px; border-radius: 5px; text-align: center;">Содержание</h2>
+    
+    <ul type="square" style="color: white;">
+        <li><p class="contain"><a class="contain_link" href="#Livehacks">Лайвхаки с командами</a></p></li>
+        <ul>
+            <li><p class="contain"><a class="contain_link" href="#closed_chest">Запертый сундук</a></p></li>
+            <li><p class="contain"><a class="contain_link" href="#sleeping_mobs">Спящие мобы</a></p></li>
+            <li><p class="contain"><a class="contain_link" href="#passengers">Пассажиры-безбилетники</a></p></li>
+            <li><p class="contain"><a class="contain_link" href="#unpickupable_item">Слабо поднять?</a></p></li>
+            <li><p class="contain"><a class="contain_link" href="#enchanted">Зачарован ни на что</a></p></li>
+            <li><p class="contain"><a class="contain_link" href="#trader">Свой торговец</a></p></li>
+        </ul>
+        <li><p class="contain"><a class="contain_link" href="#Datapacks">Мои датапаки</a></p></li>
+    </ul>
+
+
+
+    <p><a name="Livehacks"><h2 class="header">Пару лайвхаков от меня :)</h2></a></p>
+
+    <p><a name="closed_chest"><h2 class="underheader">1. «Запертый сундук»</h2></a></p>
+    <p class="p-contain">
+        Благодаря этому лайвхаку вы сможете запереть свой сундук на «Ключ». Так можно сделать более-менее безопасное хранилище. Для приключенческих карт это тоже может подойти.
+    </p>
+    <img src="images/Lock_1.png" class="p-contain-image">
+    <p class="p-contain">Благодаря этой команде вы сможете открыть сундук держа в руке любой предмет в именем,
+        которое вы указали в команде(в моём случае key). 
+        В команде необходимо прописывать имя предмета так, как показано на скрине(в "").
+        <br> В противном случае у вас ничего не получится. <br><br>К сожалению, с этой 
+        командой не получается отследить некоторые параметры ключа: цвет текста, курсив,
+        жирность текста и некоторые другие. В общем, у меня не получилось это отследить.
+        <br><br> Запирание сундука относится также к 2-м сундукам, шалкерам, печкам, воронкам
+        и некоторым другим блокам. ОДНАКО! дверь не является блоком-сущностью, поэтому
+        запирать дверь неполучится. <br><br>Также из МИНУСОВ: нельзя защитить запертые сундуки 
+        от влияния воронки(покрайней мере у меня не получилось).
+    </p>
+
+
+    <p><a name="sleeping_mobs"><h2 class="underheader">2. «Спящие мобы»</h2></a></p>
+    <p class="p-contain">
+        Этот лайвхак позволит вам заставить любого моба спать. <br><br>Команда: /data merge entity @e[type=minecraft:evoker,limit=1] {SleepingX:215,SleepingY:4,SleepingZ:-108}
+    </p>
+    <img src="images/sleeping_mob.png" class="p-contain-image">
+    <p class="p-contain">
+        В этой команде при указании координат указывайте координату части кровати с подушкой. В противном случае получится вот так.
+    </p>
+    <img src="images/sleeping_mob_3.png" class="p-contain-image">
+    <p class="p-contain">
+        Можете не беспокоиться насчёт ориентации моба, если вдруг спавните его без интеллекта, он сам подстроится под кровать
+    </p>
+    <img src="images/sleeping_mob_2.png" class="p-contain-image">
+    <p class="p-contain">Моб не играет абсолютно никакой роли. Вы можете использовать мобов начиная от маленького зомби и заканчивая эндер-драконом. Это может пригодится для создания карт. Пользуйтесь наздоровье )</p>
+    
+
+    <p><a name="passengers"><h2 class="underheader">3. «Пассажиры-безбилетники»</h2></a></p>
+    <p class="p-contain">
+        Данная команда позволит вам посадить одного моба на другого. Это работает абсолютно со всеми мобами. ОДНАКО с игроком это не работает(на игрока нельзя никого посадить). <br><br>Команда: /summon minecraft:pig ~ ~ ~ {NoAI:1b, Passengers:[{id:"villager", Passengers:[{id:"villager", Passengers:[{id:"villager", Passengers:[{id:"villager"}]}]}]}]}. <br><br>Основной тег оформляется вот так: Passengers:[{id:""}]
+    </p>
+    <img src="images/vavilon_tower.png" class="p-contain-image">
+    <p class="p-contain">
+        Наездники на летучих мышах ))
+    </p>
+    <img src="images/passengers.png" class="p-contain-image">
+
+
+    <p><a name="unpickupable_item"><h2 class="underheader">4. «Слабо поднять?»</h2></a></p>
+    <p class="p-contain"> Данная команда позволит вам заспавнить любую вещь, которую вы не сможете поднять. Этой командой возможно регулировать время подбирания вещи.<br><br>Команда: /summon minecraft:item ~ ~ ~ {Item:{id:"diamond", Count:1b}, PickupDelay:100000}. Основным параметром для изменения является PickupDelay. Прошу вас соблюдать синтаксис.</p>
+    <img src="images/unpickupable_item.png" class="p-contain-image">
+
+
+    <p><a name="enchanted"><h2 class="underheader">5. «Зачарован ни на что»</h2></a></p>
+    <p class="p-contain">Благодаря этой команде вы сможете выдать себе любую вещь, которая зачарована ни на что. Здесь зачарование идёт как декор. <br><br>Команда:/give @s minecraft:gold_block{Enchantments:[{}]}. <br><br>Интересно то, что внутри тега Enchantments:[] можно указывать другие зачарования в {}. <br><br>Например: Enchantments:[{id:"sharpness", lvl:999},{id:"protection", lvl:999}]. <br><br>Тут id это id зачарования, если плохо знаете английский, поищите в интернете, но лучше УЧИТЕ АНГЛИЙСКИЙ )). Вам он очень пригодится в дальнейшем.</p>
+    <img src="images/enchanted.png" class="p-contain-image">
+
+
+    <p><a name="trader"><h2 class="underheader">6. «Свой торговец»</h2></a></p>
+    <p class="p-contain">Синтаксис этой команды будет по-сложнее. Такая команда будет полезна для создание карт. Она позволит вам создать жителя с такими предметами для торговли, с которыми вы сами захотите.</p>
+    <img src="images/trader.png" class="p-contain-image">
+    <p class="p-contain">Команда: /summon minecraft:villager ~ ~1.8 ~ {NoAI:1b,VillagerData:{profession:cartographer, level:5, type:plains}, CustomName:{"text":"Bank", "color":"yellow"}, Offers:{Recipes:[{ buy:{id:gold_block, Count:2}, sell:{id:emerald, Count:1}, maxUses:9999999},{buy:{id:emerald, Count:1}, sell:{id:gold_block, Count:2}, maxUses:9999999}, {buy:{id:diamond, Count:1}, sell:{id:emerald, Count:3}, maxUses:9999999}, {buy:{id:emerald, Count:3}, sell:{id:diamond, Count:1}, maxUses:9999999}, {buy:{id:emerald_block, Count:1}, sell:{id:netherite_ingot,Count:1}, maxUses:9999999}, {buy:{id:netherite_ingot, Count:1}, sell:{id:emerald_block, Count:1}, maxUses:9999999}, {buy:{id:diamond, Count:3}, sell:{id:netherite_ingot, Count:1}, maxUses:9999999}, {buy:{id:netherite_ingot, Count:1}, sell:{id:diamond, Count:3}, maxUses:9999999}, {buy:{id:diamond, Count:6}, sell:{id:wither_skeleton_skull, Count:1}, maxUses:9999999}, {buy:{id:wither_skeleton_skull, Count:1}, sell:{id:diamond, Count:6}, maxUses:9999999}]}} <br><br>Основной тег для редактирования торгов это Recipes:[]. Предметы указываются вот так { { buy:{id:"id предмета, который он будет у вас требовать", Count:2b(кол-во, буква b обязательна)}, sell:{тоже самое, что и в buy}, maxUses:9999999(количество использования) } }</p>
+
+
+
+    <p><a name="Datapacks"><h2 class="header">Мои датапаки</h2></a></p>
+
+    <p><h2 class="underheader">1. Car datapack</h2></p>
+    <p class="p-contain">
+        Этот датапак позволит создать переносную лошадь, параметры которой будут заметно выше, чем у других. У неё повышенная скорость и огромный запас здоровья, так что убить её просто так не получится.
+    </p>
+    <img src="images/car_datapack_1.png", class="p-contain-image">
+    <p class="p-contain">
+        Это предусмотренно для того, чтобы вы не смогли потерять свой транспорт в каком-нибудь несчасном случае, однако она НЕ БЕССМЕРТНА, ведь у неё всего 1000 hp(это не опечатка), поэтому убить её всё-таки можно. ОДНАКО я упоминал, что она переносная, поэтому в неё предусмотрена такая функция. Для того, чтобы "подобрать" транспорт, вам всего-то надо открыть меню этой лошади(Shift + ПКМ по ней) и снять с неё седло.
+    </p>
+    <img src="images/car_datapack_2.png" class="p-contain-image">
+    <p class="p-contain">
+        Как только седло будет снято, ваша лошадь умрёт, а на её месте появится звезда незера, при помощи которой вы сможете заново заспавнить данную лошадь в любом другом месте.
+    </p>
+    <img src="images/car_datapack_3.png" class="p-contain-image">
+    <p class="p-contain">
+        Предмет для спавна лощади крафтится на обычном верстаке.<br><br>Предметы для крафта:<br><br>1 стекло;<br><br>5 слитков железа;<br><br>2 чёрные шерсти;
+    </p>
+    <img src="images/car_datapack_4.png" class="p-contain-image">
+
+
+    <!-- <div>                                               
+        <a class="button8">Start Travel</a>
+    </div> -->
+         
+
+    
+
+    <!-- <div class="Veza">
+        <img src="images/Belaya_Veza.jpg" alt="">
+    </div> -->
+    
+    <!-- <div class="text_box1">
+        On my webpage you can find information
+        about interesting facts and national
+        objects in Belarus
+    </div> -->
+
+    
+      
+    
+</body>
+
+</html>

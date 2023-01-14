@@ -1,0 +1,213 @@
+body
+{
+  background-image: url(images/python_background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    image-rendering:auto;
+
+}
+
+h1
+{
+    position:relative;
+    text-align: center;
+    color:white;
+    font-size: 1.5cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid white;
+    border-radius: 10px;
+    border-width: 2px;
+    width:500px;
+    height: 70px;
+    margin-left: 30%;
+    
+}
+
+p
+{
+  color:white;
+  font-size:0.5cm;
+  
+}
+
+h2
+{
+  color:white;
+}
+
+a.button8 {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 10em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    position: relative;
+    justify-content: center;
+  } 
+
+  a.button8:hover { background: rgba(255,255,255,.2); }
+
+  a.button8:active { background: white; }
+  
+  div
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text_box1
+  {
+    margin-left: 100px;
+    margin-right: 1000px;
+    margin-top: 400px;
+    padding: 10px; 
+    border: 2px solid white;
+    color: white; 
+    font-size:0.6cm;
+    position: relative;
+    
+  }
+       
+.Veza
+{
+    position: relative;
+    margin-top: 400px;
+}  
+
+
+
+.Start_travel
+{
+  padding: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  transition: 0.3s;
+  width:160px;
+  position:relative;
+  text-decoration: none;
+  
+}
+
+.home {
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.Minecraft {
+  border: 2px solid white;
+  background: none;
+  font-size: 16px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+ /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.Python {
+    border: 2px solid white;
+    background: none;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+.contain {
+  margin-left: 10px;
+}
+
+.contain_link {
+  text-decoration: underline;
+  color: white;
+}
+
+.p-contain {
+  margin-left: 20px; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: bold;
+}
+
+.p-contain-image {
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 700px;
+  height: 400px;
+  margin-left: 20%;
+}
+
+.header {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  /* margin-left: 35%; */
+  margin-top: 50px;
+}
+
+.underheader {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 40%;
+}
+
+
+.dropbtn {
+  
+  padding: 16px;
+  font-size: 16px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  transition: 0.2s;
+  width:160px;
+  position:relative;
+  
+  
+}
+
+.dropdown {
+  
+  position: relative;
+  display: inline-block;
+    
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover { background: rgba(255,255,255,.2); transition: 0.2s; }
+
+.dropdown:hover .dropdown-content {display: block; }
+
+.dropdown:hover .dropbtn {background-color: rgba(255,255,255,.2);}
+
+.Start_travel:hover {background-color: rgba(255,255,255,.2);}
+.Start_travel:active {background-color: rgb(0, 255, 234);}
