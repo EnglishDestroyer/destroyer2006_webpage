@@ -9,21 +9,28 @@
     <link rel="icon" type="image/icon" href="images/favicon.ico">
 </head>
 <body>
-    <section style="float: right;">
-        <a href="index.html", style="position: relative; width: 60px; height: 60px;"><img src="images/home.png", width="60px", height="60px"></a>
-    </section>
+
     <section style="float: left;">
         <div class="dropdown">
             <button class="dropbtn", style="font-weight: bold;">Menu</button>
             <div class="dropdown-content">
-                <a class="Minecraft", href="minecraft_page.html", style="text-align:center;"><img src="images/minecraft.png", style="height: 20px; width: 20px; margin-right: 20px; margin-left: 10px;">Minecraft</a>
+                <a class="Minecraft", href="minecraft_page.html", style="text-align:center;"><img src="images/minecraft.png" class="Minecraft_icon">Minecraft</a>
             </div>
         </div>
     </section>
+
+
+
+    <section style="float: right;">
+        <a href="index.html"><img src="images/home.png" class="home_btn"></a>
+    </section>
+
     <h1>Minecraft</h1>
-    <h2 style="border: 2px solid white; width: 400px; height: 30px; border-radius: 5px; text-align: center;">Что интересного</h2>
+
+    <h2 class="Topic" style="margin-top: 40px;">Что интересного</h2>
     <p class="p-contain">Здесь вы сможете найти некоторую информацию насчёт идей по майнкрафту. Надеюсь, это поможет вам в ваших проектах,<br>или подтолкнёт к чему-нибудь интересному. Желаю приятного пребывания на моём сайте :)</p>
-    <h2 style="border: 2px solid white; width: 400px; height: 30px; border-radius: 5px; text-align: center;">Содержание</h2>
+    </section>
+    <h2 class="Topic">Содержание</h2>
     
     <ul type="square" style="color: white;">
         <li><p class="contain"><a class="contain_link" href="#Livehacks">Лайвхаки с командами</a></p></li>
@@ -39,13 +46,16 @@
         <ul>
             <li><p class="contain"><a class="contain_link" href="#car_datapack">Car datapack</a></p></li>
             <li><p class="contain"><a class="contain_link" href="#enchant">Enchantments</a></p></li>
+            <li><p class="contain"><a class="contain_link" href="#carrier">Carrier</a></p></li>
         </ul>
     </ul>
 
-
-
     <p><a name="Livehacks"><h2 class="header">Пару лайвхаков от меня :)</h2></a></p>
 
+
+
+
+    <!-- Closed Chest -->
     <p><a name="closed_chest"><h2 class="underheader">1. «Запертый сундук»</h2></a></p>
     <p class="p-contain">
         Благодаря этому лайвхаку вы сможете запереть свой сундук на «Ключ». Так можно сделать более-менее безопасное хранилище. Для приключенческих карт это тоже может подойти.
@@ -64,6 +74,11 @@
     </p>
 
 
+
+
+
+
+    <!-- Sleeping Mobs -->
     <p><a name="sleeping_mobs"><h2 class="underheader">2. «Спящие мобы»</h2></a></p>
     <p class="p-contain">
         Этот лайвхак позволит вам заставить любого моба спать. <br><br>Команда: /data merge entity @e[type=minecraft:evoker,limit=1] {SleepingX:215,SleepingY:4,SleepingZ:-108}
@@ -78,8 +93,11 @@
     </p>
     <img src="images/sleeping_mob_2.png" class="p-contain-image">
     <p class="p-contain">Моб не играет абсолютно никакой роли. Вы можете использовать мобов начиная от маленького зомби и заканчивая эндер-драконом. Это может пригодится для создания карт. Пользуйтесь наздоровье )</p>
-    
 
+
+
+
+    <!-- Passengers -->
     <p><a name="passengers"><h2 class="underheader">3. «Пассажиры-безбилетники»</h2></a></p>
     <p class="p-contain">
         Данная команда позволит вам посадить одного моба на другого. Это работает абсолютно со всеми мобами. ОДНАКО с игроком это не работает(на игрока нельзя никого посадить). <br><br>Команда: /summon minecraft:pig ~ ~ ~ {NoAI:1b, Passengers:[{id:"villager", Passengers:[{id:"villager", Passengers:[{id:"villager", Passengers:[{id:"villager"}]}]}]}]}. <br><br>Основной тег оформляется вот так: Passengers:[{id:""}]
@@ -91,16 +109,25 @@
     <img src="images/passengers.png" class="p-contain-image">
 
 
+
+
+    <!-- Unpickupable Item -->
     <p><a name="unpickupable_item"><h2 class="underheader">4. «Слабо поднять?»</h2></a></p>
     <p class="p-contain"> Данная команда позволит вам заспавнить любую вещь, которую вы не сможете поднять. Этой командой возможно регулировать время подбирания вещи.<br><br>Команда: /summon minecraft:item ~ ~ ~ {Item:{id:"diamond", Count:1b}, PickupDelay:100000}. Основным параметром для изменения является PickupDelay. Прошу вас соблюдать синтаксис.</p>
     <img src="images/unpickupable_item.png" class="p-contain-image">
 
 
+
+
+    <!-- Enchanted on nothing -->
     <p><a name="enchanted"><h2 class="underheader">5. «Зачарован ни на что»</h2></a></p>
     <p class="p-contain">Благодаря этой команде вы сможете выдать себе любую вещь, которая зачарована ни на что. Здесь зачарование идёт как декор. <br><br>Команда:/give @s minecraft:gold_block{Enchantments:[{}]}. <br><br>Интересно то, что внутри тега Enchantments:[] можно указывать другие зачарования в {}. <br><br>Например: Enchantments:[{id:"sharpness", lvl:999},{id:"protection", lvl:999}]. <br><br>Тут id это id зачарования, если плохо знаете английский, поищите в интернете, но лучше УЧИТЕ АНГЛИЙСКИЙ )). Вам он очень пригодится в дальнейшем.</p>
     <img src="images/enchanted.png" class="p-contain-image">
 
 
+
+
+    <!-- Trader -->
     <p><a name="trader"><h2 class="underheader">6. «Свой торговец»</h2></a></p>
     <p class="p-contain">Синтаксис этой команды будет по-сложнее. Такая команда будет полезна для создание карт. Она позволит вам создать жителя с такими предметами для торговли, с которыми вы сами захотите.</p>
     <img src="images/trader.png" class="p-contain-image">
@@ -114,6 +141,8 @@
     </p>
     <br><br>
     <p><a name="car_datapack"></a></p>
+
+    <!-- Car Datapack -->
     <p><h2 class="underheader">1. Car datapack</h2></p>
     <p class="p-contain">
         Этот датапак позволит создать переносную лошадь, параметры которой будут заметно выше, чем у других. У неё повышенная скорость и огромный запас здоровья, так что убить её просто так не получится.
@@ -134,7 +163,7 @@
 
 
 
-
+    <!-- Enchantments -->
     <p><a name="enchant"></a></p>
     <p><h2 class="underheader">2. Enchantments</h2></p>
     <p class="p-contain">
@@ -151,26 +180,25 @@
     </p>
     <img src="images/enchant_3.png" class="p-contain-image">
     <img src="images/enchant_4.png" class="p-contain-image">
-    <!-- <div>                                               
-        <a class="button8">Start Travel</a>
-    </div> -->
-         
 
-    
 
-    <!-- <div class="Veza">
-        <img src="images/Belaya_Veza.jpg" alt="">
-    </div> -->
-    
-    <!-- <div class="text_box1">
-        On my webpage you can find information
-        about interesting facts and national
-        objects in Belarus
-    </div> -->
-
-    
-      
-    
+    <!-- Carrier -->
+    <p><a name="carrier"></a></p>
+    <p><h2 class="underheader">3. Carrier</h2></p>
+    <p class="p-contain">
+        Думаю, что большинство людей хотели майнить афк. Я создал датапак, который позволит создать карьер, копающий 3х3 блоков до бедрока. Этот датапак добавляет вот такого шахтёра, который будет капать вертикально вниз и 3х3 блока в ширину.
+    </p>
+    <img src="images/carrier_datapack_1.png" class="p-contain-image">
+    <p class="p-contain">
+        А также сборщика ресурсов, как на этой картинке.
+    </p>
+    <img src="images/carrier_datapack_2.png" class="p-contain-image">
+    <p class="p-contain">
+        Для активации карьера или сборщика ресурсов, вам необходимо будет просто выбросить на землю особый предмет. Для активации карьера, выбросите на землю особую плавильную печь, а для сборщика - особую бочку(см. на скрин в слоты хотбара). Эти особые предметы вы сможете купить у торговца, которого заспавните вот этой командой<br><br> /function carrier:spawn_carrier_shop
+    </p>
+    <img src="images/carrier_datapack_3.png" class="p-contain-image">
+    <p class="p-contain">
+        Однако ленивые, или любители выдачи предмета моту выдать себе и то и другое при помощи команд:<br><br>Для карьера:<br>/function carrier:get_carrier<br><br>Для сборщика ресурсов:<br>/function carrier:get_carrier_pickup
+    </p>
 </body>
-
 </html>

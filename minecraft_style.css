@@ -1,14 +1,187 @@
 body
 {
-  background-image: url(images/minecraft_background.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    image-rendering:auto;
+  background-image: url(images/minecraft_background_smoothed.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  image-rendering:auto;
 
 }
 
-h1
+
+@media screen and (min-width:320px) {
+  h1
+{
+    position:relative;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 150px;
+    padding: 2px;
+    margin-left: 27%;
+    
+}
+
+  div
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+
+/* .home {
+    position: relative;
+    margin-top: 10px;
+} */
+
+
+.Minecraft {
+  border: 1px solid white;
+  background: none;
+  font-size: 7px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.Minecraft_icon {
+  height: 8px;
+  width: 8px;
+  margin-right: 2px;
+}
+
+.contain {
+  margin-left: 1px;
+  font-size: 10px;
+  color: white;
+}
+
+.contain_link {
+  text-decoration: underline;
+  color: white;
+  font-size: 10px;
+}
+
+.Topic {
+  border: 2px solid white;
+  width: 300px; 
+  height: 10px; 
+  border-radius: 4px; 
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+.p-contain {
+  margin-left: 2px; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+}
+
+.home_btn {
+  width: 20px;
+  height: 20px;
+}
+
+.p-contain-image {
+  border: 2px solid white;
+  border-radius: 2px;
+  width: 295px;
+  height: 165px;
+  align-content: center;
+}
+
+.header {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 300px;
+  height: 20px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+.underheader {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.dropbtn {
+  
+  padding: 4px;
+  font-size: 8px;
+  border: 1.5px solid white;
+  background: none;
+  color: white;
+  transition: 0.2s;
+  width:60px;
+  position:relative;
+  
+  
+}
+
+.dropdown {
+  
+  position: relative;
+  display: inline-block;
+    
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width:60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover { background: rgba(255,255,255,.2); transition: 0.2s; }
+
+.dropdown:hover .dropdown-content {display: block; }
+
+.dropdown:hover .dropbtn {background-color: rgba(255,255,255,.2);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+  h1
 {
     position:relative;
     text-align: center;
@@ -24,36 +197,6 @@ h1
     
 }
 
-p
-{
-  color:white;
-  font-size:0.5cm;
-  
-}
-
-h2
-{
-  color:white;
-}
-
-a.button8 {
-    display: inline-block;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    user-select: none;
-    padding: .5em 10em;
-    outline: none;
-    border: 2px solid;
-    border-radius: 1px;
-    transition: 0.2s;
-    position: relative;
-    justify-content: center;
-  } 
-
-  a.button8:hover { background: rgba(255,255,255,.2); }
-
-  a.button8:active { background: white; }
   
   div
   {
@@ -61,47 +204,6 @@ a.button8 {
     justify-content: center;
   }
 
-  .text_box1
-  {
-    margin-left: 100px;
-    margin-right: 1000px;
-    margin-top: 400px;
-    padding: 10px; 
-    border: 2px solid white;
-    color: white; 
-    font-size:0.6cm;
-    position: relative;
-    
-  }
-       
-.Veza
-{
-    position: relative;
-    margin-top: 400px;
-}  
-
-
-
-.Start_travel
-{
-  padding: 16px;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-size: 16px;
-  border: 2px solid white;
-  background: none;
-  color: white;
-  transition: 0.3s;
-  width:160px;
-  position:relative;
-  text-decoration: none;
-  
-}
-
-.home {
-    position: relative;
-    margin-top: 10px;
-}
 
 
 .Minecraft {
@@ -110,19 +212,12 @@ a.button8 {
   font-size: 16px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
- /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
-  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  /* font-family: 'Courier New', Courier, monospace; */
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
-
-.Python {
-  border: 2px solid white;
-  background: none;
-  font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+.Minecraft_icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
 }
 
 .contain {
@@ -138,6 +233,12 @@ a.button8 {
   margin-left: 20px; 
   font-family: 'Courier New', Courier, monospace; 
   font-weight: bold;
+  color: white;
+}
+
+.home_btn {
+  width: 30px;
+  height: 30px;
 }
 
 .p-contain-image {
@@ -212,3 +313,4 @@ a.button8 {
 
 .Start_travel:hover {background-color: rgba(255,255,255,.2);}
 .Start_travel:active {background-color: rgb(0, 255, 234);}
+}
